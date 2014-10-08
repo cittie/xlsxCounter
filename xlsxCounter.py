@@ -45,10 +45,14 @@ def read_excel(xlsx_file):
         
         for row_index in range(1, sheet.nrows):
             address_value = str(sheet.cell(row_index, address_column_index).value)
+<<<<<<< HEAD
             if sheet.cell(row_index, age_column_index).value:
                 age_value = int(sheet.cell(row_index, age_column_index).value)
             else:
                 age_value = 0
+=======
+            age_value = int(sheet.cell(row_index, age_column_index).value)
+>>>>>>> a8d11d7c3890d50c92c1ac06ad143b749d14a276
             name_value = str(sheet.cell(row_index, name_column_index).value)
             phone_value = str(sheet.cell(row_index, phone_column_index).value)
                             
@@ -98,5 +102,9 @@ log_list = []
 family_dict = {}
 
 family_dict = read_excel(xlsx_file)
+<<<<<<< HEAD
 xlsx_write(family_dict)
 input("Press Enter to continue...")
+=======
+xlsx_write(family_dict)
+>>>>>>> a8d11d7c3890d50c92c1ac06ad143b749d14a276
